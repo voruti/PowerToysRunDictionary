@@ -1,0 +1,13 @@
+﻿{
+    "ID": "07d77899358bcfabc3608f9d4c59966c",
+    "ActionKeyword": "==",
+    "IsGlobal": true,
+    "Name": "Dictionary",
+    "Author": "voruti",
+    "Version": "0.0.1",
+    "Language": "csharp",
+    "Website": "https://github.com/voruti",
+    "IcoPathDark": "Images\\dictionary.dark.png",
+    "IcoPathLight": "Images\\dictionary.light.png",
+    "ExecuteFileName": "Community.PowerToys.Run.Plugin.Dictionary.dll"
+}
