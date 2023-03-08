@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 // using System.Text.RegularExpressions;
 // using Wox.Plugin;
-namespace Community.PowerToys.Run.Plugin.Dictionary
+namespace Dictionary
 {
     public class InputInterpreter
     {

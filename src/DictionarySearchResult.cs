@@ -3,7 +3,7 @@
 // See the LICENSE file in the project root for more information.
 
 // using System;
-namespace Community.PowerToys.Run.Plugin.Dictionary
+namespace Dictionary
 {
     public class DictionarySearchResult
     {
