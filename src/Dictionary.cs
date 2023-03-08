@@ -11,6 +11,9 @@ using System.Windows;
 using System.Windows.Input;
 using ManagedCommon;
 using Wox.Plugin;
+using Wox.Plugin.Logger;
+using Microsoft.PowerToys.Settings.UI.Library;
+using System.Windows.Controls;
 
 namespace Dictionary
 {
