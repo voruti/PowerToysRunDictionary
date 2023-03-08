@@ -1,13 +1,13 @@
-{
-  "ID": "HBB9510CD0D2481F853690A07E6DC426",
-  "ActionKeyword": "^",
-  "IsGlobal": false,
-  "Name": "Translator",
-  "Author": "N0I0C0K",
-  "Version": "1.0.0",
-  "Language": "csharp",
-  "Website": "https://github.com/N0I0C0K/PowerTranslator",
-  "ExecuteFileName": "Translator.dll",
-  "IcoPathDark": "Images\\translater.dark.png",
-  "IcoPathLight": "Images\\translater.light.png"
+﻿{
+    "ID": "07d77899358bcfabc3608f9d4c59966c",
+    "ActionKeyword": "==",
+    "IsGlobal": true,
+    "Name": "Dictionary",
+    "Author": "voruti",
+    "Version": "0.0.1",
+    "Language": "csharp",
+    "Website": "https://github.com/voruti",
+    "IcoPathDark": "Images\\dictionary.dark.png",
+    "IcoPathLight": "Images\\dictionary.light.png",
+    "ExecuteFileName": "Community.PowerToys.Run.Plugin.Dictionary.dll"
 }
