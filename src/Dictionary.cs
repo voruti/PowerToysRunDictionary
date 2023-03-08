@@ -71,7 +71,7 @@ namespace Dictionary
                 Title = string.Format("{0}: {1}", result.KeyString, result.ResultString),
                 IcoPath = _icon_path,
                 Score = result.Score,
-                SubTitle = string.Format(Properties.Resources.copy_to_clipboard, result.ResultString),
+                SubTitle = string.Format("Copy {0} to clipboard", result.ResultString),
                 Action = c =>
                 {
                     var ret = false;
@@ -84,7 +84,7 @@ namespace Dictionary
                         }
                         catch (ExternalException)
                         {
-                            MessageBox.Show(Properties.Resources.copy_failed);
+                            MessageBox.Show("Copy failed");
                         }
                     });
                     thread.SetApartmentState(ApartmentState.STA);
@@ -100,7 +100,7 @@ namespace Dictionary
             return new ContextMenuResult
             {
                 PluginName = Name,
-                Title = Properties.Resources.context_menu_copy,
+                Title = "Copy (Enter)",
                 Glyph = "\xE8C8",
                 FontFamily = "Segoe MDL2 Assets",
                 AcceleratorKey = Key.Enter,
@@ -116,7 +116,7 @@ namespace Dictionary
                         }
                         catch (ExternalException)
                         {
-                            MessageBox.Show(Properties.Resources.copy_failed);
+                            MessageBox.Show("Copy failed");
                         }
                     });
                     thread.SetApartmentState(ApartmentState.STA);
@@ -143,12 +143,12 @@ namespace Dictionary
 
         public string GetTranslatedPluginTitle()
         {
-            return Properties.Resources.plugin_name;
+            return "Dictionary";
         }
 
         public string GetTranslatedPluginDescription()
         {
-            return Properties.Resources.plugin_description;
+            return "Provides a simple dictionary for looking up definitions.";
         }
 
         private void OnThemeChanged(Theme currentTheme, Theme newTheme)
