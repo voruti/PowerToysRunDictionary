@@ -17,7 +17,7 @@ using System.Windows.Controls;
 
 namespace Dictionary
 {
-    public class Dictionary : IPlugin, IDisposable, IDelayedExecutionPlugin, ISettingProvider, IContextMenu
+    public class Dictionary : IPlugin, IContextMenu, IDisposable
     {
         public string Name => "Dictionary";
 
