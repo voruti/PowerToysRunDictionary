@@ -4,10 +4,10 @@
     "IsGlobal": true,
     "Name": "Dictionary",
     "Author": "voruti",
-    "Version": "0.0.1",
+    "Version": "1.0.0",
     "Language": "csharp",
-    "Website": "https://github.com/voruti",
+    "Website": "https://github.com/voruti/PowerToysRunDictionary",
     "IcoPathDark": "Images\\dictionary.dark.png",
     "IcoPathLight": "Images\\dictionary.light.png",
-    "ExecuteFileName": "Community.PowerToys.Run.Plugin.Dictionary.dll"
+    "ExecuteFileName": "Dictionary.dll"
 }
