@@ -1,0 +1,5 @@
+# PowerToysRunDictionary
+
+[microsoft/PowerToys](https://github.com/microsoft/PowerToys) Run plugin with a dictionary function.
+
+Based on the project structure of [N0I0C0K/PowerTranslator](https://github.com/N0I0C0K/PowerTranslator).
