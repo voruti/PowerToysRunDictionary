@@ -12,13 +12,13 @@ using System.Windows.Input;
 using ManagedCommon;
 using Wox.Plugin;
 
-namespace Community.PowerToys.Run.Plugin.Dictionary
+namespace Dictionary
 {
-    public class Main : IPlugin, IPluginI18n, IContextMenu, IDisposable
+    public class Dictionary : IPlugin, IDisposable, IDelayedExecutionPlugin, ISettingProvider, IContextMenu
     {
-        public string Name => Properties.Resources.plugin_name;
+        public string Name => "Dictionary";
 
-        public string Description => Properties.Resources.plugin_description;
+        public string Description => "Provides a simple dictionary for looking up definitions.";
 
         private PluginInitContext _context;
         private static string _icon_path;
