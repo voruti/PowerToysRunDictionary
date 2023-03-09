@@ -1,4 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
     <PropertyGroup>
         <TargetFramework>net7.0-windows</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -9,6 +10,7 @@
         <GenerateSatelliteAssembliesForCore>true</GenerateSatelliteAssembliesForCore>
         <AssemblyName>Dictionary</AssemblyName>
     </PropertyGroup>
+
     <ItemGroup>
         <Reference Include="Wox.Plugin">
             <HintPath>lib/Wox.Plugin.dll</HintPath>
@@ -24,4 +26,17 @@
             <HintPath>lib/Newtonsoft.Json.dll</HintPath>
         </Reference>
     </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Images\dictionary.dark.png">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Images\dictionary.light.png">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="plugin.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
 </Project>
