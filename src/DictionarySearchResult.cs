@@ -18,17 +18,5 @@ namespace Dictionary
             ResultString = resultString;
             Score = score;
         }
-
-        /*public override bool Equals(object obj)
-        {
-            return obj is DictionarySearchResult result &&
-                   KeyString == result.KeyString &&
-                   ResultString == result.ResultString;
-        }
-
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(KeyString, ResultString);
-        }*/
     }
 }
