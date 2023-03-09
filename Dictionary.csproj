@@ -13,13 +13,8 @@
         <Reference Include="Wox.Plugin">
             <HintPath>lib/Wox.Plugin.dll</HintPath>
         </Reference>
-        <Reference Include="Wox.Infrastructure">
-            <HintPath>lib/Wox.Infrastructure.dll</HintPath>
-        </Reference>
-        <Reference Include="Microsoft.PowerToys.Settings.UI.Library">
-            <HintPath>lib/PowerToys.Settings.UI.Lib.dll</HintPath>
-        </Reference>
         <Reference Include="PowerToys.Common.UI">
+            <!-- Theme -->
             <HintPath>lib/PowerToys.Common.UI.dll</HintPath>
         </Reference>
         <Reference Include="PowerToys.ManagedCommon">
