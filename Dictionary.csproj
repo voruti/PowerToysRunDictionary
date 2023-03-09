@@ -20,8 +20,8 @@
         <Reference Include="PowerToys.ManagedCommon">
             <HintPath>lib/PowerToys.ManagedCommon.dll</HintPath>
         </Reference>
-    </ItemGroup>
-    <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+        <Reference Include="Newtonsoft.Json">
+            <HintPath>lib/Newtonsoft.Json.dll</HintPath>
+        </Reference>
     </ItemGroup>
 </Project>
