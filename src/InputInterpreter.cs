@@ -5,40 +5,31 @@
 using System.IO;
 using System.Text.Json;
 
-namespace Dictionary
+namespace Dictionary;
+
+public class InputInterpreter
 {
-    public class InputInterpreter
+    private readonly Dictionary<string, string> _dictionary;
+
+    public InputInterpreter()
     {
-        private readonly Dictionary<string, string> dictionary;
+        var documents = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        var file = Path.Combine(documents, "PowerToys", "dictionary.json");
+        var json = File.ReadAllText(file);
 
-        public InputInterpreter()
-        {
-            string documents = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string file = Path.Combine(documents, "PowerToys", "dictionary.json");
-            string json = File.ReadAllText(file);
+        _dictionary = JsonSerializer.Deserialize<Dictionary<string, string>>(json) ?? new Dictionary<string, string>();
+    }
 
-            dictionary = JsonSerializer.Deserialize<Dictionary<string, string>>(json);
-        }
-
-        public List<DictionarySearchResult> QueryDictionary(string str)
-        {
-            // str = Regex.Replace(str, @":$", string.Empty);
-            return dictionary.Keys
-                .ToList()
-                .FindAll(stringKey => stringKey.ToLower().StartsWith(str.ToLower()))
-                .OrderBy(stringKey => (stringKey.Length - str.Length).ToString("D4") + dictionary.GetValueOrDefault(stringKey))
-                .Select(stringKey => new DictionarySearchResult(stringKey, dictionary.GetValueOrDefault(stringKey), (int)Math.Round(((double)str.Length / stringKey.Length) * 200)))
-                .ToList();
-        }
-
-        /*public static List<DictionarySearchResult> Parse(Query query)
-        {
-            List<string> splitList = query.Search.Split(' ').ToList();
-
-            return splitList
-                .SelectMany(QueryDictionary)
-                .Distinct()
-                .ToList();
-        }*/
+    public List<DictionarySearchResult> QueryDictionary(string str)
+    {
+        return _dictionary.Keys
+            .ToList()
+            .FindAll(stringKey => stringKey.ToLower().StartsWith(str.ToLower()))
+            .OrderBy(stringKey =>
+                (stringKey.Length - str.Length).ToString("D4") + _dictionary.GetValueOrDefault(stringKey))
+            .Select(stringKey => new DictionarySearchResult(stringKey,
+                _dictionary.GetValueOrDefault(stringKey) ?? "Error",
+                (int) Math.Round((double) str.Length / stringKey.Length * 200)))
+            .ToList();
     }
 }
