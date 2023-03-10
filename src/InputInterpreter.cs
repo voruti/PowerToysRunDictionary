@@ -3,10 +3,8 @@
 // See the LICENSE file in the project root for more information.
 
 using System.IO;
-using Newtonsoft.Json;
+using System.Text.Json;
 
-// using System.Text.RegularExpressions;
-// using Wox.Plugin;
 namespace Dictionary
 {
     public class InputInterpreter
@@ -19,7 +17,7 @@ namespace Dictionary
             string file = Path.Combine(documents, "PowerToys", "dictionary.json");
             string json = File.ReadAllText(file);
 
-            dictionary = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+            dictionary = JsonSerializer.Deserialize<Dictionary<string, string>>(json);
         }
 
         public List<DictionarySearchResult> QueryDictionary(string str)

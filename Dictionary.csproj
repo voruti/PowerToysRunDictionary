@@ -23,9 +23,6 @@
             <HintPath>lib/PowerToys.ManagedCommon.dll</HintPath>
         </Reference>
     </ItemGroup>
-    <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
-    </ItemGroup>
 
     <ItemGroup>
         <None Update="Images\dictionary.dark.png">
