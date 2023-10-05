@@ -4,7 +4,7 @@
     "IsGlobal": true,
     "Name": "Dictionary",
     "Author": "voruti",
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "Language": "csharp",
     "Website": "https://github.com/voruti/PowerToysRunDictionary",
     "IcoPathDark": "Images\\dictionary.dark.png",
