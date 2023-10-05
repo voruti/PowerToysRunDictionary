@@ -6,4 +6,4 @@ Based on the project structure of [N0I0C0K/PowerTranslator](https://github.com/N
 
 ## Installation
 
-Put the unzipped release file into `C:\Program Files\PowerToys\modules\launcher\Plugins`.
+Put the unzipped release file into `%LOCALAPPDATA%\Microsoft\PowerToys\PowerToys Run\Plugins`.
