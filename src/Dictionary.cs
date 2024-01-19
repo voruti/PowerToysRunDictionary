@@ -16,6 +16,8 @@ namespace Dictionary
 
         public string Description => "Provides a simple dictionary for looking up definitions.";
 
+        public static string PluginID => "07d77899358bcfabc3608f9d4c59966c";
+
         private PluginInitContext _context;
         private static string _icon_path;
         private bool _disposed;
